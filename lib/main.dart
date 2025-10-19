@@ -32,7 +32,7 @@ class _CalcState extends State<Calc> {
             }
           }
         }
-      } else if ('+-x/'.contains(b)) {
+      } else if ('+-*/'.contains(b)) {
         if (f != '' && o != '' && !r) tap('=');
         f = d; o = b; r = true;
       } else if (b == '.') {
